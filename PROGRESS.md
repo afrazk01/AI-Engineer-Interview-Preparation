@@ -42,6 +42,23 @@ Then: Git → DSA → ML → DL.
 
 ---
 
+## Git Curriculum
+
+Repo: `git@github.com:afrazk01/AI-Engineer-Interview-Preparation.git` (this folder is now the repo).
+Afraz handles auth/push himself; Claude preps commits and explains.
+
+- [x] **G1 — Repo basics** ✅ 3 areas (working dir → staging → repo), init, .gitignore, add, commit, remote, push. First commit d824e66.
+- [ ] G2 — Commit cycle in practice: status, diff, log, amend, good messages
+- [ ] G3 — Branching & merging (most important interview topic)
+- [ ] G4 — Merge vs rebase
+- [ ] G5 — Undoing: reset (soft/mixed/hard) vs revert vs restore/checkout, stash
+- [ ] G6 — Remote workflow: fetch vs pull vs push, tracking branches, PRs
+- [ ] G7 — Merge conflicts (hands-on resolution)
+- [ ] G8 — Interview concepts: HEAD, detached HEAD, cherry-pick, tags, reflog
+- [ ] G9 — Git mock interview
+
+---
+
 ## Session Log
 
 ### 2026-06-03 — Session 1
