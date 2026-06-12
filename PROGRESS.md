@@ -47,15 +47,32 @@ Then: Git → DSA → ML → DL.
 Repo: `git@github.com:afrazk01/AI-Engineer-Interview-Preparation.git` (this folder is now the repo).
 Afraz handles auth/push himself; Claude preps commits and explains.
 
-- [x] **G1 — Repo basics** ✅ 3 areas (working dir → staging → repo), init, .gitignore, add, commit, remote, push. First commit d824e66.
-- [ ] G2 — Commit cycle in practice: status, diff, log, amend, good messages
-- [ ] G3 — Branching & merging (most important interview topic)
-- [ ] G4 — Merge vs rebase
-- [ ] G5 — Undoing: reset (soft/mixed/hard) vs revert vs restore/checkout, stash
-- [ ] G6 — Remote workflow: fetch vs pull vs push, tracking branches, PRs
+- [x] **G1 — Repo basics** ✅ 3 areas, init, .gitignore, add, commit, remote, push.
+- [x] **G2/G3 — Commit cycle + branching** ✅ (already knew; verified via diagnostic — skipped)
+- [x] **G4 — Merge vs rebase** ✅ HANDS-ON: built real fork, merged (saw diamond + merge commit w/ 2 parents), rebased (saw linear history + new hashes). Golden rule: never rebase shared commits. Fixed "rebase squashes to one commit" misconception.
+- [x] **G5 — Undoing: reset vs revert** ✅ revert=new inverse commit (safe/shared); reset=moves branch pointer. Modes: soft=keep staged, mixed=keep unstaged, hard=discard. Demoed soft→hard live to clean up. Quiz passed (--mixed).
+- [x] **G6 — fetch vs pull + HEAD** ✅ fetch=download only (safe), pull=fetch+merge; ahead=push/behind=pull; HEAD→branch→commit, detached HEAD. Upstream tracking set.
+- [x] **G7 — Merge conflicts** ✅ (concept: markers→edit→add→commit, or `merge --abort`; Afraz skipped hands-on, understands it)
+- [ ] G8 — stash/cherry-pick/reflog/tags (overview given; revisit if needed)
+- [ ] G9 — Git mock (deferred — may do later)
+- _Git parked ~95% done 2026-06-08; moved to ML per Afraz._
 - [ ] G7 — Merge conflicts (hands-on resolution)
 - [ ] G8 — Interview concepts: HEAD, detached HEAD, cherry-pick, tags, reflog
 - [ ] G9 — Git mock interview
+
+---
+
+## Machine Learning Curriculum (started 2026-06-08)
+
+Method: teach LINEAR with intuition+math+code (Afraz rusty on ML, broad gaps in diagnostic). NO LaTeX — plain-text formulas only (terminal doesn't render LaTeX). Full topic list in `Machine Learning/SYLLABUS.md` (CampusX 134).
+
+Diagnostic (2026-06-08): rusty intermediate. Supervised/unsupervised ok; RL wrong; bias-variance/metrics/regularization/etc forgotten. Decided to teach here, not take a course (passive lectures = his retention problem).
+
+- [x] **ML-L1 — Types of ML + Bias-Variance** ✅ 3 types (fixed RL=agent/env/reward); bias=too simple=underfit=bad on both; variance=too complex=overfit=good train/bad test; sweet spot. Killed "bias = the b in y=mx+b" confusion.
+- [x] **ML-L2 — Regression metrics** ✅ MAE (robust, avg magnitude), MSE (squares, penalizes big, smooth=training loss), RMSE (√MSE, readable), R² (vs predicting mean). MAE for outliers, MSE when big errors matter.
+- [x] **ML-L3 — Regularization (Ridge/Lasso)** ✅ reg adds weight penalty to cut variance/overfitting; Ridge=MSE+λΣw² (shrinks, keeps all features); Lasso=MSE+λΣ|w| (zeros weights = feature selection); ElasticNet=both. Explain-back passed: (1) penalize big weights→smoother func→lower variance; (2) L1 constant ±λ gradient reaches 0 vs Ridge 2λw fades near 0; (3) high λ→penalty dominates→underfit. Tightened the variance bridge + "penalty dominates loss" phrasing. Tune λ via CV.
+- [ ] ML-L4 — Classification metrics: accuracy/precision/recall/F1/confusion matrix
+- [ ] (then) feature scaling, trees/bagging/boosting, gradient descent, clustering, PCA, imbalanced data, cross-validation — per syllabus
 
 ---
 
