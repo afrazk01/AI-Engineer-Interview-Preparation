@@ -8,6 +8,11 @@
 **Started:** 2026-06-03
 **Method:** explain-back in own words · write+run code per concept · cold spaced recall · spoken-answer practice. (No passive lectures — they don't stick.)
 
+**Quick-review cram sheets** (read right before any interview call):
+`INTERVIEW_QUICK_REVIEW.md` (master) · `Python/NOTES.md` · `Git/notes.md` · `Machine Learning/NOTES.md` · `Deep Learning/NOTES.md` · `DSA/NOTES.md`.
+
+**Current focus (as of 2026-06-23):** DSA coding drills — strings/arrays/two-pointer/hashmaps. The one real gap from the Funavry interview was live coding problem recognition; theory was solid. Then resume ML at L4.
+
 ---
 
 ## Baseline (Python diagnostic, 2026-06-03)
@@ -95,3 +100,19 @@ Diagnostic (2026-06-08): rusty intermediate. Supervised/unsupervised ok; RL wron
   - L7 complexity: Big-O, list O(n) vs set O(1) membership, Q7 fix, logs/binary search.
 - Added `Machine Learning/SYLLABUS.md` (CampusX 100 Days, 134 videos) for the ML phase later.
 - **Next:** L8 — full mock interview, cold recall across L1-L7. Then Git.
+
+### 2026-06-08 → 06-11 — Git + ML start
+- Git G1–G7 covered hands-on (predict→run→explain). Parked ~95% done.
+- ML started: L1 (types + bias-variance), L2 (regression metrics), L3 (regularization). Resume at L4.
+
+### 2026-06-11/12 — Funavry interview cram
+- Deep-dived RAG (chunking, reranking, hybrid/BM25, query transform, lost-in-middle, RAGAS), agents (ReAct, tool-calling, memory, multi-agent, LangGraph), DL core (NN/backprop/activations/vanishing gradient/optimizers/regularization), transformers + attention, LSTM internals. Explain-backs solid.
+
+### 2026-06-12 — Funavry interview DONE (1h20m, senior-level set)
+- Theory SOLID across the board. One real gap: live coding problem recognition.
+- They asked: **Longest Palindromic Substring** (misread + bugs — got stuck), LangGraph states/nodes + context mgmt, RAG retrieval strategies + latency, multimodal (images → CLIP / caption-then-embed), text-to-SQL agent on big schema, agents/MCP, OOP 4 pillars + diamond/MRO, tokens, FastAPI vs Flask, chunking overlap when/when-not.
+- **Takeaway → next cycle = DSA coding drills.** See `DSA/NOTES.md`.
+
+### 2026-06-23 — Notes + repo snapshot
+- Wrote quick-review cram sheets across all areas (`INTERVIEW_QUICK_REVIEW.md` + per-folder `NOTES.md`).
+- Committing + pushing everything to GitHub (moving to Mac, will pull there).
